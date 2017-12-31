@@ -1,0 +1,14 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: tgbyujhmn1
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+spring:
+  application:
+    name: microservice-gateway-zuul    # 项目名称尽量用小写
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://u5soft.com:8761/eureka/    # 指定注册中心的地址
